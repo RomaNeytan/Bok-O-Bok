@@ -1,0 +1,32 @@
+.benefits {
+    padding: 190px 0 130px;
+
+    @media(max-height: 800px) and (min-width: 768px){
+        padding: 50px 0 45px;
+    }
+
+    @media(max-width:992px){
+        padding: 100px 0 75px;
+    }
+
+    @media(max-width:767px){
+        padding: 50px 0 45px;
+    }
+
+    &-item {
+        @media(max-width:992px){
+            margin-top: 15px;
+        }
+
+        &__img {
+            margin-bottom: 28px;
+        }
+    
+        &__description {
+            font-size: 18px;
+            color: $Typography;
+            line-height: 150%;
+        }
+    }
+}
+

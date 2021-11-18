@@ -1,0 +1,94 @@
+.steps {
+    padding: 160px 0;
+
+    @media(max-height: 800px) and (min-width: 768px){
+        padding: 80px 0;
+    }
+
+    @media(max-width:1200px){
+        padding: 80px 0;
+    }
+
+    &__inner {
+        padding: 0 0 120px;
+        justify-content: center;
+
+        @media(max-width:1200px){
+            padding: 0 0 60px;
+        }
+
+        @media(max-height: 800px) and (min-width: 768px){
+            padding: 0 0 60px;
+        }
+    }
+
+    &__head {
+        @media(max-width:992px){
+            margin-bottom: 90px;
+        }
+    }
+
+    &__title {
+    
+    }
+
+    &__btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    &-item {
+        margin-top: 80px;
+
+        &_profile {
+            margin-top: 0;
+        }
+
+        &__title {
+            font-size: 24px;
+            line-height: 150%;
+            color: $Primary;
+            font-weight: 700;
+            position: relative;
+
+            &:before {
+                content: "01";
+                display: block;
+                font-size: 58px;
+                line-height: 79px;
+                font-weight: 850;
+                color:$Secondary;
+                position: absolute;
+                top:50%;
+                transform: translateY(-50%);
+                left:-115px;
+
+                @media(max-width:992px){
+                    transform: translateY(0);
+                    position: absolute;
+                    top: -75px;
+                    left:0;
+                }
+            }
+
+            &_audit{
+                &:before{
+                    content:"02";
+                }
+            }
+
+            &_advantage{
+                &:before{
+                    content:"03";
+                }
+            }
+        }
+
+        &__description {
+            margin-top: 16px;
+            line-height: 150%;
+            color: $Typography;
+            font-size: 18px;
+        }
+    }
+}

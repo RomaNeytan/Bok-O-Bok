@@ -1,0 +1,64 @@
+.marketing {
+    padding: 160px 0;
+
+    @media (max-width: 1200px) {
+        padding: 80px 0;
+    }
+
+    @media (max-height: 800px) and (min-width: 768px) {
+        padding: 80px 0 !important;
+    }
+
+    &__wrapper {
+    }
+
+    &__description {
+    }
+
+    &-item {
+        margin-top: 100px;
+
+        @media (max-height: 800px) and (min-width: 768px) {
+            margin-top: 10px;
+        }
+
+        @media (max-width: 1200px) {
+            margin-top: 50px;
+        }
+
+        @media (max-width: 767px) {
+            margin-top: 25px;
+        }
+
+        &_seo {
+            margin-top: 0;
+        }
+        &__img {
+            img {
+                max-width: 100%;
+
+                @media (max-width: 767px) {
+                    width: 300px;
+                    height: 200px;
+                }
+            }
+        }
+
+        &__content {
+        }
+
+        &__title {
+            margin-bottom: 16px;
+            font-size: 24px;
+            line-height: 150%;
+            font-weight: 700;
+            color: $Primary;
+        }
+
+        &__description {
+            font-size: 18px;
+            line-height: 150%;
+            color: $Typography;
+        }
+    }
+}

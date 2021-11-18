@@ -1,0 +1,89 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@import "fonts.scss";
+@import "vars.scss";
+@import "burger.scss";
+@import "mixin.scss";
+@import "ibg.scss";
+@import "btn.scss";
+@import "ui.scss";
+// Blocks
+@import "blocks/header.scss";
+@import "blocks/hero.scss";
+@import "blocks/benefits.scss";
+@import "blocks/info.scss";
+@import "blocks/steps.scss";
+@import "blocks/cards.scss";
+@import "blocks/marketing.scss";
+@import "blocks/package.scss";
+@import "blocks/feedback.scss";
+@import "blocks/footer.scss";
+
+.global-wrapper{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+// Основная сетка
+
+.container{
+    max-width: 1110px !important;
+}
+
+body {
+    font-family:'URWGeometricArabic' , Georgia;
+    color: $Typography;
+    font-size: 18px;
+    margin: 0;
+    font-weight: 400;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img{
+    vertical-align: top;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+ul,li{
+    margin: 0;
+    padding: 0 !important;
+    list-style: none;
+}
+
+a{
+    text-decoration: none !important;
+}
+
+p{
+    margin: 0 0 4px;
+}
+

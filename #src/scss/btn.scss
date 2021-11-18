@@ -1,0 +1,51 @@
+.btn {
+    &-section {
+        display: inline-flex;
+        vertical-align: top;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background: $Secondary;
+        border-radius: 13px;
+        height: 62px;
+        padding: 0 24px;
+        transition: all 0.8s ease 0s;
+        color: $White;
+        font-weight: 700;
+        position: relative;
+        font-size: 20px;
+
+        @media(max-width:480px){
+            padding: 0 10px;
+            font-size: 17px;
+        }
+
+        span{
+            position: relative;
+            z-index: 5;
+        }
+
+        &:after {
+            content: " ";
+            display: block;
+            height: 0;
+            width: 100%;
+            border-radius: 13px;
+            background:$Primary;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate3d(-50%,-50%,0);
+            z-index: 4;
+            transition: all .8s ease-in-out 0s;
+        }
+
+        &:hover{
+            color:$Secondary;
+
+            &:after{
+                height: 100%;
+            }
+        }
+    }
+}
